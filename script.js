@@ -1,7 +1,7 @@
 // LaVenda Tours website settings
 // Replace this number with the LaVenda Tours WhatsApp number, digits only.
 // Example: South Africa +27 82 123 4567 becomes 27821234567.
-const WHATSAPP_NUMBER = "27000000000";
+const WHATSAPP_NUMBER = "27711620485";
 
 const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector(".nav");
