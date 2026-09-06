@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LaVenda Tours - unforgettable tours, travel experiences and transfers.">
+  <title>LaVenda Tours | Explore More. Travel Better.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">LaVenda <span>Tours</span></a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#tours">Tours</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#booking">Book Now</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+        <h1>Explore More.<br><em>Travel Better.</em></h1>
+        <p class="hero-text">Discover beautiful destinations, unforgettable experiences and stress-free travel with LaVenda Tours.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#tours">Explore Tours</a>
+          <a class="btn ghost" href="#booking">Plan My Trip</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>Local Expertise</strong><span>Travel with people who know the destination.</span></div>
+      <div><strong>Memorable Experiences</strong><span>Trips designed around your adventure.</span></div>
+      <div><strong>Personal Service</strong><span>From planning to your return journey.</span></div>
+    </section>
+
+    <section id="tours" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">DISCOVER LA VENDA & BEYOND</p>
+        <h2>Popular Tours</h2>
+        <p>Choose an experience or contact us to create a trip that fits your group and budget.</p>
+      </div>
+      <div class="cards">
+        <article class="tour-card">
+          <div class="tour-image safari"><span>Safari</span></div>
+          <div class="card-body">
+            <h3>Safari Adventures</h3>
+            <p>Experience wildlife, beautiful landscapes and unforgettable African sunsets.</p>
+            <a href="#booking" class="text-link" data-tour="Safari Adventures">Request a quote →</a>
+          </div>
+        </article>
+        <article class="tour-card">
+          <div class="tour-image getaway"><span>Getaway</span></div>
+          <div class="card-body">
+            <h3>Weekend Getaways</h3>
+            <p>Perfect escapes for couples, friends, families and small groups.</p>
+            <a href="#booking" class="text-link" data-tour="Weekend Getaways">Request a quote →</a>
+          </div>
+        </article>
+        <article class="tour-card">
+          <div class="tour-image group"><span>Groups</span></div>
+          <div class="card-body">
+            <h3>Group & School Trips</h3>
+            <p>Organised travel for schools, churches, teams, businesses and community groups.</p>
+            <a href="#booking" class="text-link" data-tour="Group & School Trips">Request a quote →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="about-photo"></div>
+      <div class="about-copy">
+        <p class="eyebrow">ABOUT LAVENDA TOURS</p>
+        <h2>More than a trip. It's a memory.</h2>
+        <p>LaVenda Tours is built to make travel simple, enjoyable and memorable. Whether you want a day adventure, a weekend escape, group travel or a customised holiday, we're here to help you plan it.</p>
+        <div class="stats">
+          <div><strong>01</strong><span>Personalised planning</span></div>
+          <div><strong>02</strong><span>Flexible experiences</span></div>
+          <div><strong>03</strong><span>Travel support</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-heading">
+        <p class="eyebrow">THE JOURNEY</p>
+        <h2>Travel. Discover. Remember.</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item g1">Adventure</div>
+        <div class="gallery-item g2">Nature</div>
+        <div class="gallery-item g3">Escape</div>
+        <div class="gallery-item g4">Culture</div>
+        <div class="gallery-item g5">Wildlife</div>
+      </div>
+      <p class="gallery-note">Replace these visual placeholders with your own tour photos to make the site truly yours.</p>
+    </section>
+
+    <section class="cta">
+      <div>
+        <p class="eyebrow">READY TO GO?</p>
+        <h2>Let's plan your next adventure.</h2>
+      </div>
+      <a class="btn light" href="#booking">Start Planning</a>
+    </section>
+
+    <section id="booking" class="section booking-section">
+      <div class="section-heading">
+        <p class="eyebrow">BOOK WITH US</p>
+        <h2>Tell us about your trip</h2>
+        <p>Send your details and we'll get back to you with options.</p>
+      </div>
+      <form id="bookingForm" class="booking-form">
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" required placeholder="Your name"></div>
+        <div class="field"><label for="phone">WhatsApp / Phone</label><input id="phone" name="phone" required placeholder="+27 ..."></div>
+        <div class="field"><label for="tour">Tour type</label>
+          <select id="tour" name="tour">
+            <option>Safari Adventures</option>
+            <option>Weekend Getaways</option>
+            <option>Group & School Trips</option>
+            <option>Custom Trip</option>
+          </select>
+        </div>
+        <div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div>
+        <div class="field"><label for="people">Number of travellers</label><input id="people" name="people" type="number" min="1" placeholder="e.g. 4"></div>
+        <div class="field full"><label for="message">What would you like to do?</label><textarea id="message" name="message" rows="5" placeholder="Tell us your destination, budget, activities or anything else..."></textarea></div>
+        <button class="btn primary full" type="submit">Send Booking Request</button>
+        <p class="form-note">The form opens WhatsApp with your booking details. Update the WhatsApp number in <code>script.js</code> before publishing.</p>
+      </form>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div>
+        <p class="eyebrow">CONTACT</p>
+        <h2>Let's talk travel.</h2>
+        <p>Have a question or want a custom package? Reach out and let's build your trip.</p>
+      </div>
+      <div class="contact-list">
+        <a href="https://wa.me/27000000000" target="_blank">WhatsApp: +2771620485</a>
+        <a href="mailto:hello@lavendatours.co.za">Email: ndivhotshirado@gmail.com</a>
+        <span>68 Krogh Straat, Louis Trichardt, 0920</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">LaVenda <span>Tours</span></div>
+    <p>© 2026 LaVenda Tours. All rights reserved.</p>
+    <p>Explore More. Travel Better.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
